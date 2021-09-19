@@ -178,8 +178,9 @@
             // Reset Function
             
             function reset(){
+              if (score >= 1000000000) {
               cursors = 0;
-              score = 0;
+              score = 10;
               josh = 0;
               cursor2 = 0;
               upgrades = 30;
@@ -188,12 +189,15 @@
               joshCost = 60;
               cursorCost = 45;
               clicks = 0;
+              jake = 0;
+              increment = increment + 3;
               
               document.getElementById("reset").innerHTML = reset;
               document.getElementById("cursors").innerHTML = cursors;
               document.getElementById("jake").innerHTML = jake;
               document.getElementById("upgrades").innerHTML = upgrades;
-            }
+                   }
+              }
             
             // New function for game saves
             
