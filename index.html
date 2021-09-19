@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html onclick="addToScore()" >
+<html>
     <head>
         <title>Pat's Clicker</title>
     </head>
@@ -132,7 +132,7 @@
             function upgradeClick() {
               if (score >= upgradeCost) {
                 score = score - upgradeCost;
-                increment = increment + 1.5;
+                increment = increment + 12;
                 upgrades = upgrades + 1;
                 upgradeCost = upgradeCost * 2
                 
